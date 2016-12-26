@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<!-- SEO -->
+		<link rel="manifest" href="">
+		<meta name="description" content="">
+		<title></title>
+		<!-- Open graph -->
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="">
+		<meta property="og:description" content="">
+		<meta property="og:url" content="">
+		<meta property="og:image" content="">
+		<!-- Twitter cards -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="">
+		<meta name="twitter:description" content="">
+		<meta name="twitter:url" content="">
+		<meta name="twitter:image" content="">
+		<!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+	</head>
+	<body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Object Literal Pattern</h1>
+                <p>An object literal is perhaps the simplest way to encapsulate related code. It doesn't offer any privacy for properties or methods, but it's useful for eliminating anonymous functions from your code, centralizing configuration options, and easing the path to reuse and refactoring.</p>
+            </div>
+            <div id="peopleModule">
+                <h1>People</h1>
+                <div class="inputModule">
+                    <input type="text" placeholder="name">
+                    <button id="addPerson">Add Person</button>
+                </div>
+                <ul id="people">
+                    <script id="people-template" type="text/javascript">
+                        {{#people}}
+                            <li>
+                                <span>{{.}}</span>
+                                <span class="del">X</span>
+                            </li>
+                        {{/people}}
+                    </script>
+                </ul>
+            </div>
+        </div>
+		<footer>
+		<!-- Javascript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+        <script src="./js/main.js"></script>
+		</footer>
+	</body>
+</html>

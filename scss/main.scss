@@ -1,0 +1,72 @@
+$primaryColor: #eee;
+$accentColor: darken($primaryColor, 40%);
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .hero-unit {
+        max-width: 400px;
+        h1 {
+        font-weight: 800;
+        font-size: 32px;
+        background-color: $primaryColor;
+        padding: 50px;
+        text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+    }
+    #peopleModule {
+        h1 {
+            text-align: center;
+        }
+        div.inputModule {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            input {
+                padding: 5px;
+                border-radius: 5px;
+            }
+            button#addPerson {
+                background-color: $accentColor;
+                color: $primaryColor;
+                font-size: 18px;
+                padding: 5px;
+                border-radius: 5px;
+                border: 0px;
+                margin-left: 5px;
+            }
+        }
+        ul#people {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap; // flex items will fit onto one line by default
+            list-style: none;
+            li {
+                background-color: $primaryColor;
+                padding: 5px;
+                border-radius: 5px;
+                margin: 5px;
+                span.del {
+                    font-size: 6px;
+                    background-color: $accentColor;
+                    color: #fff;
+                    border-radius: 50%;
+                    padding: 2px 4px 2px;
+                    margin: 0 0 0 5px;
+                    vertical-align: text-top;
+                }
+            }
+        }
+    }
+}
