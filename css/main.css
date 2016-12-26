@@ -32,7 +32,10 @@ body {
       padding: 5px;
       border-radius: 5px;
       border: 0px;
-      margin-left: 5px; }
+      margin-left: 5px;
+      transition: all 0.5s ease; }
+    .container #peopleModule div.inputModule button#addPerson:hover {
+      background-color: #bbbbbb; }
   .container #peopleModule ul#people {
     display: flex;
     flex-direction: row;
@@ -51,4 +54,7 @@ body {
         border-radius: 50%;
         padding: 2px 4px 2px;
         margin: 0 0 0 5px;
-        vertical-align: text-top; }
+        vertical-align: text-top;
+        transition: all 0.5s ease; }
+      .container #peopleModule ul#people li span.del:hover {
+        background-color: #bbbbbb; }
